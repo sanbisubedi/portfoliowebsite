@@ -27,6 +27,10 @@ nav .logo{
 	  font-family: "Playwrite CO", cursive;
 font-weight: 800;
 }
+
+#check{
+	display: none;
+}
 nav ul li a{
 	text-decoration: none;
 	font-weight: lighter;
@@ -44,6 +48,9 @@ nav ul{
 	align-content: center;
 
 }
+/*nav ul{
+	
+}*/
 .fullname{
 		  font-family: "Playwrite CO", cursive;
 }
@@ -86,9 +93,92 @@ cursor: pointer;
 #instagram:hover{
 	color:#ff001a;
 }
+
 .profiles{
 	margin: 50px;
 	display: flex;
 gap: 20px;
 	justify-content: center;
+}
+#checkbox{
+	display: none;
+}
+#threebar{
+	display: none;
+}
+input[type="checkbox"]:checked ~ ul {
+     width: 100%;
+     position: absolute;
+      left: 0;
+      top: 100px;
+     display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+
+    background-color:rgba(0, 0, 0, 0.616);
+   
+  
+
+
+
+        }
+	section{
+		margin-top: 100px;
+	}
+
+@media (max-width:1188px){
+	nav .logo{
+		margin-top: 50px;
+	}
+	nav{
+      width: 100vw;
+  margin: 10px auto;
+  height: 60px;
+  border-radius: 0px;
+  margin: 0px auto;
+position: relative;
+  }
+
+  nav ul {
+display: none;
+
+  }
+  #threebar{
+    display: block;
+    font-size: 3rem;
+    position: absolute;
+    right: 10px;
+    margin-top: 15px;
+    color: white;
+  }
+
+	section{
+		flex-direction: column;
+		margin-top: 200px;
+	}
+	.left p {
+		font-size: 100px;
+	}
+.right img{
+		width: 600px;
+	aspect-ratio: 1;
+}
+#facebook , #instagram{
+	font-size: 80px;
+}
+.right{
+	margin-top: 100px;
+}
+
+
+}
+
+
+@media (max-width:1013px){
+	.left p{
+		font-size: 70px;
+	}
+
 }
