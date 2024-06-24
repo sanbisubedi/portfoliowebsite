@@ -1,0 +1,94 @@
+.grid_parent{
+	display: grid;
+	height: 100%;
+	width: 100%;
+	grid-template-columns: 1fr 500px;
+	grid-gap: 20px;
+	align-items: center;
+	padding: 40px;
+	z-index: 0;
+}
+nav{
+	z-index: 1;
+}
+.gridchild{
+	
+	margin: 0 auto;
+
+}
+.projectno1{
+
+	grid-row:1/3 ;
+	position: relative;
+	width: 100%;
+
+}
+
+.gridchild{
+	width: 50%;
+}
+.projectno2 img{
+	width: 100%;
+}
+.projectno1 img{
+	margin: 0 auto;
+}
+.projectno3{
+	grid-template-columns: 2/3;
+}
+.gridchild {
+	position: relative;
+}
+.projectno1 , .projectno2 , .projectno3{
+	transition: left 2s;
+}
+.projectno1:hover::after , .projectno2:hover::after , .projectno3:hover::after   {
+width: 100%;
+display: block;
+left: 50%;
+}
+.projectno1::after ,.projectno2::after , .projectno3::after{
+	content: 'Project 1 Guess Number Project Using HTML, CSS AND JS';
+position: absolute;
+top: 50%;
+left: 0%;
+transform: translate(-50%,-50%);
+color: white;
+background-color: rgba(255, 0, 0, 0.621);
+width: 0%;
+height: 80%;
+text-align: center;
+display: none;
+}
+.projectno2::after{
+content: 'Project 2 modal window created using html and css';
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+color: white;
+background-color: rgba(255, 0, 0, 0.621);
+width: 0%;
+height: 100%;
+text-align: center;
+}
+@media (max-width: 1372px) {
+	.grid_parent{
+		height: 100vh;
+	}
+  .grid_parent {
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+  }
+  .projectno1{
+
+	grid-row:1/2 ;
+
+}
+.gridchild{
+	width: 100%;
+}
+.projectno1 img{
+width: 100%;
+}
+}

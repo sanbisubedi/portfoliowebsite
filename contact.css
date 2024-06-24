@@ -48,7 +48,8 @@ height: 85%;
 	text-align: center;
 }
 .leftside .email , .leftside .phonenumber{
-	font-size: 30px;
+	
+	font-size: 25px;
 	text-align: center;
 }
  .rightside{
@@ -76,7 +77,10 @@ textarea{
 }
 @media (max-width:1189px){
 	.leftside{
-		width: 80%;
+		margin: 0 auto;
+	}
+	.leftside .phonenumber{
+		font-size: 20px;
 	}
 	.rightside{
 		margin-top:0px ;
@@ -88,6 +92,14 @@ textarea{
 	}
 	.leftside , .rightside{
 	width: 100%;
+}
+.rightside input ,textarea{
+	width: 80%;
+	margin: 0 auto;
+}
+.rightside textarea{
+
+	margin: 0 auto;
 }
 form{
 	height: fit-content;
