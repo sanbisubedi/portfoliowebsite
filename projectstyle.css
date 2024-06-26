@@ -43,24 +43,24 @@ nav{
 	transition: left 2s;
 }
 .projectno1:hover::after , .projectno2:hover::after , .projectno3:hover::after   {
-width: 100%;
 display: block;
-left: 50%;
+
 }
-.projectno1::after ,.projectno2::after , .projectno3::after{
-	content: 'Project 1 Guess Number Project Using HTML, CSS AND JS';
+.projectno1::after{
+content: 'Project 1 Guess Number Game created using HTML, CSS and JS';
 position: absolute;
 top: 50%;
-left: 0%;
+left: 50%;
 transform: translate(-50%,-50%);
 color: white;
 background-color: rgba(255, 0, 0, 0.621);
-width: 0%;
-height: 80%;
+width: 100%;
+height:95%;
 text-align: center;
 display: none;
+
 }
-.projectno2::after{
+.projectno2::after {
 content: 'Project 2 modal window created using html and css';
 position: absolute;
 top: 50%;
@@ -68,9 +68,23 @@ left: 50%;
 transform: translate(-50%,-50%);
 color: white;
 background-color: rgba(255, 0, 0, 0.621);
-width: 0%;
+width: 100%;
 height: 100%;
 text-align: center;
+display: none;
+}
+.projectno3::after{
+content: 'Project 3 animation page created using html and css';
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+color: white;
+background-color: rgba(255, 0, 0, 0.621);
+width: 100%;
+height: 100%;
+text-align: center;
+display: none;
 }
 @media (max-width: 1372px) {
 	.grid_parent{
