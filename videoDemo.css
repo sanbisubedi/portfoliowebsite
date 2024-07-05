@@ -14,3 +14,11 @@
 	width: 100%;
 	height: 100%;
 }
+@media (max-width:1440px){
+	.videodiv{
+		width: 100%;
+	}
+}
+body{
+	overflow: hidden;
+}

@@ -10,6 +10,8 @@
 }
 body {
   background-color: black;
+  width: 100vw;
+  overflow-x:hidden ;
 }
 
 nav {
@@ -44,13 +46,13 @@ nav ul {
   display: flex;
   gap: 50px;
   align-content: center;
+  padding: 40px 0px;
 }
-/*nav ul{
-	
-}*/
+
 .fullname {
   font-family: "Playwrite CO", cursive;
 }
+
 ul li a:hover {
   border: 2px solid #ff001a;
   border-radius: 10px;
@@ -113,7 +115,7 @@ input[type="checkbox"]:checked ~ ul {
   position: absolute;
   align-items: center;
   justify-content: center;
-
+  margin-top: 15px;
   background-color: rgba(0, 0, 0, 0.616);
 }
 .indexpageoverallcontent {
@@ -135,6 +137,7 @@ input[type="checkbox"]:checked ~ ul {
 
   nav ul {
     display: none;
+
   }
   #threebar {
     display: block;
@@ -160,9 +163,7 @@ input[type="checkbox"]:checked ~ ul {
   #instagram {
     font-size: 80px;
   }
-  .right {
-    margin-top: 100px;
-  }
+
 }
 .activepage {
   border: 2px solid #ff001a;
@@ -173,5 +174,23 @@ input[type="checkbox"]:checked ~ ul {
 @media (max-width: 1013px) {
   .left p {
     font-size: 70px;
+  }
+}
+@media (max-width:653px){
+  .left p{
+    font-size: 30px;
+  }
+}
+@media (max-width:615px){
+  .right img{
+    width: 50%;
+  }
+  .right{
+    display: flex;
+    justify-content: center;
+  }
+  .indexpageoverallcontent .right{
+
+
   }
 }
