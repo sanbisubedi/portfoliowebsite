@@ -188,9 +188,5 @@ input[type="checkbox"]:checked ~ ul {
   .right{
     display: flex;
     justify-content: center;
-  }
-  .indexpageoverallcontent .right{
 
-
-  }
 }
